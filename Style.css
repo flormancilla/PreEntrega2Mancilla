@@ -1,0 +1,1110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "F1titulos";
+    src: url(./assets/fonts/F1clasico.ttf);
+}
+
+@font-face {
+    font-family: "F1textos";
+    src: url(./assets/fonts/F1texto.ttf);
+}
+
+@font-face {
+    font-family: "F1rookies";
+    src: url(./assets/fonts/Rookies.ttf);
+}
+
+/* INICIO */
+.container-body-inicio {
+    border-top: 0px;
+    background-color: #DEE0E3;
+}
+
+.caja-body {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "menu header header"
+        "menu article aside"
+        "menu footer footer";
+    grid-template-columns: auto 55% 25%;
+    grid-template-rows: 23% 62% 15%;
+    column-gap: 5px 32px 32px;
+    row-gap: 10px 10px 10px;
+}
+
+nav {
+    text-decoration: none;
+    list-style: none;
+    height: 100%;
+    min-height: 30%;
+    display: grid;
+    padding-right: 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.navbar {
+    background-color: black;
+    width: auto;
+    height: auto;
+    grid-area: menu;
+    padding-top: 30%;
+
+}
+
+.Inicio a {
+    text-decoration: none;
+    color: #e10600;
+    font-family: "F1titulos";
+    font-size: 32px;
+}
+
+.nav-item a {
+    color: white;
+    font-size: 24px;
+    list-style-type: none;
+    font-family: "f1titulos";
+    text-decoration: none;
+}
+
+.Inicio:hover {
+    background-color: gray;
+}
+
+.nav-item:hover {
+    background-color: red;
+}
+
+.lista-equipos a {
+    color: gray;
+    font-size: 1em;
+    font-family: "f1titulos";
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.lista-pilotos a {
+    color: grey;
+    font-size: 1em;
+    font-family: "f1titulos";
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.caja-titulo-header {
+    display: grid;
+    grid-area: header;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    padding: 0;
+}
+
+.imagen-banner {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+}
+
+#rookiesArg {
+    font-family: "F1titulos";
+    font-size: 2, 5em;
+    color: #74acdf;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.caja-article {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: grid;
+    grid-area: article;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#bienvenida {
+    color: #e10600;
+    font-size: 2em;
+    font-family: "F1textos";
+    width: auto;
+    height: auto;
+    padding-left: 10px;
+}
+
+#parrafo-1 {
+    color: black;
+    font-size: 1, 5em;
+    font-family: "F1textos";
+    width: auto;
+    height: auto;
+    padding-left: 10px;
+}
+
+#video-presentacion {
+    align-items: first baseline;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    float: initial;
+}
+
+.caja-aside {
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    grid-area: aside;
+}
+
+#proximo-GP {
+    color: white;
+    font-size: 2em;
+    font-family: "F1titulos";
+}
+
+.caja-proximo-GP {
+    background-color: #e10600;
+    height: auto;
+    text-align: center;
+    display: grid;
+}
+
+.caja-imagen-GP {
+    height: auto;
+    display: grid;
+}
+
+.caja-titulo-GP {
+    background-color: black;
+    height: auto;
+    text-align: center;
+    display: grid;
+}
+
+#GP {
+    color: white;
+    font-size: 2em;
+    font-family: "F1titulos";
+}
+
+.caja-horarios {
+    height: auto;
+    background-color: #e10600;
+    display: grid;
+    padding-left: 10px;
+}
+
+.GP-dias-horarios {
+    color: white;
+    font-size: 1em;
+    font-family: "F1textos";
+}
+
+footer {
+    color: white;
+    font-family: "F1textos";
+    font-size: 1em;
+    text-align: center;
+    display: grid;
+}
+
+.caja-pie-de-pagina {
+    width: 100%;
+    height: 100%;
+    background-color: #e10600;
+    grid-area: footer;
+
+}
+
+.florencia-mancilla {
+    grid-area: firma;
+}
+
+.icono-instagram {
+    grid-area: instagram;
+}
+
+.comunidad-reddit {
+    grid-area: comunidad;
+}
+
+.icono-reddit {
+    grid-area: reddit;
+}
+
+.copy {
+    grid-area: copy;
+}
+
+.f1 {
+    grid-area: f1;
+}
+
+.container-redes-sociales {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-column: auto auto;
+    grid-row: auto auto auto;
+    grid-template-areas:
+        "firma instagram"
+        "comunidad reddit"
+        "copy f1";
+}
+
+/* PILOTOS */
+.container-body-pilotos {
+    border-top: 0px;
+    background-image: url(./assets/images/fondos/muro-negro-puntos.jpg);
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "menu header"
+        "menu caja-aside-grilla"
+        "menu footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 1px 32px 32px;
+    row-gap: 5px;
+}
+
+.caja-aside-grilla {
+    display: grid;
+    font-size: 32px;
+    grid-template-areas:
+        "tituloGrilla tituloGrilla"
+        "lista-de-pilotos";
+    grid-column: auto;
+    grid-row: auto;
+}
+
+.titulo-grilla {
+    display: grid;
+    grid-area: tituloGrilla;
+    justify-content: center;
+}
+
+.lista-de-pilotos {
+    display: grid;
+    grid-area: lista-de-pilotos;
+    grid-template-areas:
+        "piloto1 piloto2"
+        "piloto3 piloto4"
+        "piloto5 piloto6"
+        "piloto7 piloto8"
+        "piloto9 piloto10"
+        "piloto11 piloto12"
+        "piloto13 piloto14"
+        "piloto15 piloto16"
+        "piloto17 piloto18"
+        "piloto19 piloto20";
+    grid-column: 40% 40%;
+}
+
+.h1tituloGrilla {
+    font-family: "F1titulos";
+    font-size: 50px;
+    color: #e10600;
+    justify-content: center;
+    display: grid;
+}
+
+.h2pilotos {
+    font-family: "F1Titulos";
+    font-size: 32px;
+    color: #DEE0E3;
+}
+
+.edad {
+    font-family: "F1textos";
+    font-size: 28px;
+    color: #DEE0E3;
+}
+
+.equipos {
+    font-family: "F1textos";
+    font-size: 28px;
+    color: #DEE0E3;
+}
+
+.lista-de-pilotos {
+    display: grid;
+}
+
+#verstappen {
+    grid-area: piloto1;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/01-33-verstappen.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#leclerc {
+    grid-area: piloto2;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/02-16-leclerc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#perez {
+    grid-area: piloto3;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/03-11-perez.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#russell {
+    grid-area: piloto4;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/04-63-russell.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#sainz {
+    grid-area: piloto5;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/05-55-sainz.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#hamilton {
+    grid-area: piloto6;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/06-44-hamilton.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#norris {
+    grid-area: piloto7;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/07-4-norris.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#ocon {
+    grid-area: piloto8;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/08-31-ocon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#alonso {
+    grid-area: piloto9;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/09-14-alonso.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#bottas {
+    grid-area: piloto10;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/10-77-bottas.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#magnussen {
+    grid-area: piloto11;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/11-20-magnussen.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#gasly {
+    grid-area: piloto12;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/12-10-gasly.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#stroll {
+    grid-area: piloto13;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/13-18-stroll.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#tsunoda {
+    grid-area: piloto14;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/14-22-tsunoda.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#zhou {
+    grid-area: piloto15;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/15-24-zhou.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#albon {
+    grid-area: piloto16;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/16-23-albon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#devries {
+    grid-area: piloto17;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/17-21-devries.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#piastri {
+    grid-area: piloto18;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/18-81-piastri.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#hulkenberg {
+    grid-area: piloto19;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/19-27-Hulkenberg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#sargeant {
+    grid-area: piloto20;
+    display: grid;
+    background: url(./assets/images/pilotos/pilotos-parrilla/20-2-sargent.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+#footer-grilla {
+    background-color: #e10600;
+}
+
+/* CIRCUITOS */
+.container-body-circuitos {
+    border-top: 0px;
+    background-image: url(./assets/images/fondos/muro-negro-puntos.jpg);
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "menu header"
+        "menu caja-titulo-general"
+        "menu footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 1px 32px 32px;
+    row-gap: 5px;
+}
+
+.caja-titulo-general {
+    grid-area: caja-titulo-general;
+    display: grid;
+    grid-column: auto auto auto;
+    grid-row: auto auto auto auto auto auto auto auto;
+
+}
+
+.lista-circuitos {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+        "barein arabia australia"
+        "azerbaiyan miami imola"
+        "monaco espana canada"
+        "austria uk hungria"
+        "belgica paises-bajos italia"
+        "singapur japon qatar"
+        "eeuu mexico brasil"
+        "las-vegas abu-dabi .";
+}
+
+.gp {
+    font-family: "F1titulos";
+    font-size: 24px;
+    color: white;
+    background-color: #e10600;
+}
+
+.caja-circuito {
+    display: grid;
+    row-gap: 2em;
+    column-gap: 2em;
+}
+
+.titulo-gp {
+    background-color: #e10600;
+    font-family: "f1titulos";
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: grid;
+}
+
+.imagen-GP {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.nombre-circuito {
+    background-color: black;
+    color: white;
+    font-family: "f1titulos";
+    font-size: 28px;
+    text-align: center;
+    display: grid;
+}
+
+.horarios {
+    background-color: #e10600;
+    font-family: "f1textos";
+    color: white;
+    font-size: 20px;
+    display: grid;
+}
+
+#barein {
+    display: grid;
+    grid-area: barein;
+}
+
+#arabia {
+    display: grid;
+    grid-area: arabia;
+}
+
+#australia {
+    display: grid;
+    grid-area: australia;
+}
+
+#azerbaiyan {
+    display: grid;
+    grid-area: azerbaiyan;
+}
+
+#miami {
+    display: grid;
+    grid-area: miami;
+}
+
+#imola {
+    display: grid;
+    grid-area: imola;
+}
+
+#monaco {
+    display: grid;
+    grid-area: monaco;
+}
+
+#espana {
+    display: grid;
+    grid-area: espana;
+}
+
+#canada {
+    display: grid;
+    grid-area: canada;
+}
+
+#austria {
+    display: grid;
+    grid-area: austria;
+}
+
+#uk {
+    display: grid;
+    grid-area: uk;
+}
+
+#hungria {
+    display: grid;
+    grid-area: hungria;
+}
+
+#belgica {
+    display: grid;
+    grid-area: belgica;
+}
+
+#paises-bajos {
+    display: grid;
+    grid-area: paises-bajos;
+}
+
+#italia {
+    display: grid;
+    grid-area: italia;
+}
+
+#singapur {
+    display: grid;
+    grid-area: singapur;
+}
+
+#japon {
+    display: grid;
+    grid-area: japon;
+}
+
+#qatar {
+    display: grid;
+    grid-area: qatar;
+}
+
+#eeuu {
+    display: grid;
+    grid-area: eeuu;
+}
+
+#mexico {
+    display: grid;
+    grid-area: mexico;
+}
+
+#brasil {
+    display: grid;
+    grid-area: brasil;
+}
+
+#las-vegas {
+    display: grid;
+    grid-area: las-vegas;
+}
+
+#abu-dabi {
+    display: grid;
+    grid-area: abu-dabi;
+}
+
+/* TABLA DE POSICIONES */
+.container-body-posiciones {
+    border-top: 0px;
+    background-color: gray;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "menu header"
+        "menu container-tabla-posiciones"
+        "menu footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.container-tabla-posiciones {
+    display: grid;
+    grid-area: container-tabla-posiciones;
+    grid-template-areas:
+        "tituloPosiciones tituloPosiciones"
+        "tabla-mundial-de-pilotos tabla-mundial-de-constructores";
+    column-gap: 20px;
+    grid-column: auto auto;
+    justify-content: center;
+}
+
+.tabla-mundial-de-pilotos {
+    display: grid;
+    background-color: white;
+    font-family: "f1textos";
+    font-size: 24px;
+    padding-left: 25px;
+    padding-right: 25px;
+    grid-area: tabla-mundial-de-pilotos;
+    width: 100%;
+}
+
+.tabla-mundial-de-constructores {
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: grid;
+    font-family: "f1textos";
+    font-size: 24px;
+    grid-area: tabla-mundial-de-constructores;
+    width: 100%;
+}
+
+.tabla-general-de-constructores {
+    display: grid;
+    background-color: white;
+    font-family: "f1textos";
+}
+
+.campeonato {
+    font-family: "F1Titulos";
+    font-size: 32px;
+    text-align: center;
+    color: #e10600;
+    display: grid;
+}
+
+.posiciones {
+    display: grid;
+    grid-area: tituloPosiciones;
+}
+
+.titulo-mundial-de-constructores {
+    display: grid;
+}
+
+#tabla-pilotos {
+    width: 100%;
+    text-align: center;
+}
+
+#tabla-constructores {
+    width: 100%;
+    text-align: center;
+}
+
+/* COMUNIDAD */
+.container-body-comunidad {
+    border-top: 0px;
+    background-color: #DEE0E3;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "menu header"
+        "menu container-comunidad"
+        "menu footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 10px 32px 32px;
+    row-gap: 5px;
+}
+
+.container-comunidad {
+    display: grid;
+    grid-area: container-comunidad;
+    grid-template-areas:
+    "titulo-comunidad titulo-comunidad"
+    "formulario-noticias caja-redes";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+}
+
+.titulo-comunidad {
+    display: grid;
+    grid-area: titulo-comunidad;
+    text-align: center;
+    font-family: "f1titulos";
+    font-size: 32px;
+    color: #e10600;
+}
+
+.formulario-noticias {
+    display: grid;
+    grid-area: formulario-noticias;
+    font-family: "f1textos";
+    font-size: 24px;
+    text-align: left;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+}
+
+.container-form {
+    display: grid;
+    grid-area: container form;
+    grid-template-areas: 
+    "titulo-form"
+    "datos-personales"
+    "equipos-favs"
+    "pilotos-favs"
+    "boton-subs";
+}
+
+.titulo-form {
+    display: grid;
+    grid-area: titulo-form;
+}
+
+.datos-personales {
+    display: grid;
+    grid-area: datos-personales;
+}
+
+.equipos-favs {
+    display: grid;
+    grid-area: equipos-favs;
+    grid-template-areas:
+    "titulo-equipos-favs"
+    "equipos-grupo-1"
+    "equipos-grupo-2"
+    "equipos-grupo-3"
+    "equipos-grupo-4";
+}
+
+.titulo-equipos-favs {
+    display: grid;
+    grid-area: titulo-equipos-favs;
+}
+.pilotos-favs {
+    display: grid;
+    grid-area: pilotos-favs;
+    grid-template-areas:
+    "titulo-pilotos-favs"
+    "pilotos-grupo-1"
+    "pilotos-grupo-2"
+    "pilotos-grupo-3"
+    "pilotos-grupo-4"
+    "pilotos-grupo-5"
+    "pilotos-grupo-6"
+    "pilotos-grupo-7";
+}
+
+.equipos-grupo-1 {
+display: grid;
+grid-area: equipos-grupo-1;
+grid-template-columns: 30% 30% 30%;
+text-align: left;
+}
+
+.equipos-grupo-2 {
+    display: grid;
+    grid-area: equipos-grupo-2;
+    grid-template-columns: 30% 30% 30%;
+    text-align: left;
+}
+
+.equipos-grupo-3 {
+    display: grid;
+    grid-area: equipos-grupo-3;
+    grid-template-columns: 30% 30% 30%;
+    text-align: left;
+}
+
+.equipos-grupo-4 {
+    display: grid;
+    grid-area: equipos-grupo-4;
+    grid-template-columns: auto;
+    text-align: left;
+}
+
+.titulo-pilotos-favs {
+    display: grid;
+    grid-area: titulo-pilotos-favs;
+}
+
+.pilotos-grupo-1 {
+    display: grid;
+    grid-area: pilotos-grupo-1;
+    grid-template-columns: 33% 33% 33%;
+    text-align: left;
+}
+
+.pilotos-grupo-2 {
+    display: grid;
+    grid-area: pilotos-grupo-2;
+    grid-template-columns: 33% 33% 33%;
+    text-align: left;
+}
+
+.pilotos-grupo-3 {
+    display: grid;
+    grid-area: pilotos-grupo-3;
+    grid-template-columns: 33% 33% 33%;
+    text-align: left;
+}
+
+.pilotos-grupo-4 {
+    display: grid;
+    grid-area: pilotos-grupo-4;
+    grid-template-columns: 33% 33% 33%;
+    text-align: left;
+}
+
+.pilotos-grupo-5 {
+    display: grid;
+    grid-area: pilotos-grupo-5;
+    grid-template-columns: 33% 33% 33%;
+    text-align: left;
+}
+
+.pilotos-grupo-6 {
+    display: grid;
+    grid-area: pilotos-grupo-6;
+    grid-template-columns: 33% 33% 33%;
+    text-align: left;
+}
+
+.pilotos-grupo-7 {
+    display: grid;
+    grid-area: pilotos-grupo-7;
+    grid-template-columns: 33% 33% 33%;
+    text-align: left;
+}
+
+.boton-subs {
+    display: grid;
+    grid-area: boton-subs;
+}
+.caja-redes {
+    display: grid;
+    grid-area: caja-redes;
+    background-color: white;
+    grid-template-areas:
+    "redes"
+    "reddit-preview";
+    align-items: center;
+    justify-content: center;
+    font-family: "f1titulos";
+    font-size: 24px;
+    color: #e10600;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.redes {
+    display: grid;
+    grid-area: redes;
+    grid-template-areas:
+    "container-twitter container-reddit";
+    grid-column: auto auto;
+justify-content: center;
+column-gap: 50px;
+}
+
+.container-twitter {
+    display: grid;
+    grid-row: auto auto;
+    grid-area: container-twitter;
+}
+
+.container-reddit {
+    display: grid;
+    grid-area: container-reddit;
+}
+.reddit-preview {
+    display: grid;
+    grid-area: reddit-preview;
+}
+
+/* EQUIPOS */
+.container-body-equipos {
+    border-top: 0px;
+    background-color: gray;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "menu header"
+        "menu container-equipos"
+        "menu footer";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.container-equipos {
+    display: grid;
+    grid-area: container-equipos;
+    grid-template-areas:
+    "titular"
+    "video-toto";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.titulo-grilla {
+    display: grid;
+    grid-area: titular;
+    text-align: center;
+}
+
+.video-toto {
+    display: grid;
+    grid-area: video-toto;
+}
